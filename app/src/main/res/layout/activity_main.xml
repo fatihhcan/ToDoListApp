@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ListView
+        android:id="@+id/itemsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
+        android:paddingLeft="10dp"
+        android:scrollbars="none"
+        android:paddingRight="10dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/ic_baseline_add_24"
+            />
+    </ListView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
